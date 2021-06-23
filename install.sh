@@ -4,6 +4,7 @@ clear
 echo "Installing..."
 sleep 2
 chmod +x 40
+sudo apt install lolcat
 sudo apt install python
 sudo apt install python3
 echo ""

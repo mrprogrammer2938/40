@@ -1,0 +1,186 @@
+#!/usr/bin/python3
+# This code write by Mr.nope
+# Copyright 2021 Mr.nope
+# Permission is hereby granted, free of charge, 
+# to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
+# and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+# INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+import os
+import time
+import sys
+class color:
+    green = '\033[92m'
+    red = '\033[91m'
+    End = '\033[0m'
+    org = '\033[33m'
+    darkblue = '\033[34m'
+    blue = '\033[96m'
+    prl = '\033[95m'
+    line = '\033[4m'
+opt = "\n40/> "
+def title():
+    os.system("printf '\033]2;40\a'")
+def cls():
+    os.system("clear")
+def menu_40():
+    try:
+        title()
+        cls()
+        banner()
+        list()
+    except EOFError:
+        print("\nCtrl + D")
+        print("\nExiting...")
+        sys.exit()
+def banner():
+    print(color.green + """
+ █████ █████     █████   
+░░███ ░░███    ███░░░███ 
+ ░███  ░███ █ ███   ░░███ """ + color.red + " Version: " + color.blue + "1.3.0" + color.green + """
+ ░███████████░███    ░███
+ ░░░░░░░███░█░███    ░███
+       ░███░ ░░███   ███ 
+       █████  ░░░█████░  
+      ░░░░░     ░░░░░░   """ + color.End)
+def list():
+    print("\n{1}.Black-Tool")
+    print("{2}.Wirless Attack")
+    print("{3}.Cam Hackers")
+    print("{4}.DDos Attack")
+    print("{5}.Ping Test")
+    print("{6}.IPz")
+    print("{7}.Brute-Force")
+    print("{8}.Key Master")
+    print("{9}.Location Robber")
+    print("{10}.Information-Gathering")
+    print("{11}.Hack Framework")
+    print("{12}.hackingtools")
+    print("{13}.Anon Scan")
+    print("{14}.funny Termux")
+    print("{15}.Web Info")
+    print("{16}.serverscan")
+    print("{17}.Big Tool")
+    print("{18}.Hack Tools")
+    print("{19}.Port Scan")
+    print("{20}.20")
+    print("{0}.Developer")
+    print("{99}.Exit")
+    choose = input(opt)
+    if choose == '1':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Black-Tool")
+        try1()
+    elif choose == '2':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Wirless-Attack")
+        try1()
+    elif choose == '3':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Cam-Hackers")
+        try1()
+    elif choose == '4':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/DDos-Attack")
+        try1()
+    elif choose == '5':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Ping-Test")
+        try1()
+    elif choose == '6':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/IPz")
+        try1()
+    elif choose == '7':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Brute-Force")
+        try1()
+    elif choose == '8':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Key-Master")
+        try1()
+    elif choose == '9':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Location-Robber")
+        try1()
+    elif choose == '10':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Information-Gathering")
+        try1()
+    elif choose == '11':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Hack-Framework")
+        try1()
+    elif choose == '12':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/hackingtools")
+        try1()
+    elif choose == '13':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Anonscan")
+        try1()
+    elif choose == '14':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/funny-Termux")
+        try1()
+    elif choose == '15':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Web-Info")
+        try1()
+    elif choose == '16':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/serverscan")
+        try1()
+    elif choose == '17':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Big-Tool")
+        try1()
+    elif choose == '18':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Hack-Tools")
+        try1()
+    elif choose == '19':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/Portscan")
+        try1()
+    elif choose == '20':
+        cls()
+        os.system("git clone https://github.com/mrprogrammer2938/20")
+        try1()
+    elif choose == '0':
+        cls()
+        os.system("figlet -f slant 40|lolcat")
+        print(color.red + "\nThis code write by " + color.green + "Mr.nope" + color.End)
+        print(color.org + "\nVersion: " + color.darkblue + "1.3.0" + color.End)
+        print(color.prl + "\nGithub: " + color.End + color.line + "https://github.com/mrprogrammer2938" + color.End)
+        time.sleep(1)
+        try1()
+    elif choose == '99':
+        cls()
+        print(color.green + "Exiting..." + color.End)
+        sys.exit()
+    elif choose == '':
+        menu_40()
+    elif choose == ' ':
+        menu_40()
+    else:
+        cls()
+        print(choose + color.red + " Not Found!" + color.End)
+        try1()
+def try1():
+    try_to_menu = input("\npress Enter...")
+    if try_to_menu == '':
+        menu_40()
+    else:
+        menu_40()
+if __name__ == '__main__':
+    try:
+        menu_40()
+    except KeyboardInterrupt:
+        print("\nCtrl + C")
+        print("\nExiting...")
+        sys.exit()
